@@ -1,1 +1,18 @@
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/varaibles";
+
 @import "base/reset";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/container";
+@import "components/section-specialisation";
+
+@import "layout/contacts";
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/header";
+@import "layout/navigations";
+
+@import "pages/home";
