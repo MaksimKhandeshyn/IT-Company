@@ -1,0 +1,46 @@
+.apps {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.apps_title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 146%;
+  text-align: center;
+  color: $dark;
+  margin-bottom: 30px;
+}
+.apps_info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.58;
+  text-align: center;
+  color: $grey;
+}
+.apps_item {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.apps_wrapper {
+  margin-top: 55px;
+  margin-left: 10px;
+}
+.apps_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.apps-btn {
+  width: 200px;
+  height: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: $bg-button-color;
+  border: 0;
+}
