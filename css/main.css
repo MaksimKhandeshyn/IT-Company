@@ -137,7 +137,7 @@ body {
   border-bottom: solid #4985ff 1px;
 }
 
-.specialisation-list .specialisation-item:nth-child(n + 2) {
+.specialisation-list .specialisation-item:nth-child(n+2) {
   margin-left: 30px;
 }
 
@@ -155,7 +155,7 @@ body {
 
 .apps__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 146%;
   text-align: center;
   color: #323232;
@@ -166,7 +166,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.58;
-  text-align: center;
+  text-align: justify;
   color: #999;
 }
 
@@ -234,4 +234,4 @@ header .hero .hero__info {
   text-align: center;
   color: #fff;
   margin-bottom: 50px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -2,32 +2,32 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.apps_title {
+.apps__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 146%;
   text-align: center;
   color: $dark;
   margin-bottom: 30px;
 }
-.apps_info {
+.apps__info {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.58;
-  text-align: center;
+  text-align: justify;
   color: $grey;
 }
-.apps_item {
+.apps__item {
   display: flex;
   width: 350px;
   justify-content: space-between;
 }
 
-.apps_wrapper {
+.apps__wrapper {
   margin-top: 55px;
   margin-left: 10px;
 }
-.apps_list {
+.apps__list {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
