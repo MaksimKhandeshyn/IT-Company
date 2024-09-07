@@ -1,6 +1,7 @@
 .standarts {
   padding-top: 100px;
   padding-bottom: 70px;
+  background-color: $section-bg;
 }
 
 .content-wrap {
@@ -31,8 +32,7 @@
   display: block;
 }
 
-.standarts-photo,
-.standarts-title {
+.standarts-photo {
   display: none;
 }
 
