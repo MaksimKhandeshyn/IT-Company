@@ -1,0 +1,42 @@
+.video {
+  background-image: url(../../images/about-work.jpg);
+  //   background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  //   padding-bottom: 100px;
+  height: 735px;
+}
+.video-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 9px;
+}
+.video-text {
+  line-height: 1.58;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.video-button-wrap {
+  margin: 0 auto;
+  height: 474px;
+  width: 400px;
+  background-image: url(../../images/watch-video.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 188px 100px;
+}
+.video-button {
+  display: block;
+  height: 100px;
+  width: 200px;
+  border-radius: 200px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.button-info {
+  display: none;
+}
