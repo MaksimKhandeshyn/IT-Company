@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: $section-bg;
+  .footer-list {
+    width: fit-content;
+    margin: auto;
+    .footer-item {
+      margin-bottom: 15px;
+      .footer-item-title {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      .footer-link {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.58;
+        color: $grey;
+      }
+      .contact-item,
+      .section-item,
+      .customer-item,
+      .socials-item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .copyright {
+    display: block;
+    margin-top: 40px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.58;
+    text-align: center;
+    color: $grey;
+  }
+}
