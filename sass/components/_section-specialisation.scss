@@ -66,3 +66,18 @@
   background-color: $light-grey;
   margin: 85px 0;
 }
+@media screen and (min-width: 768px) {
+  .specialisation-title {
+    margin: auto;
+    font-size: 35px;
+  }
+  .specialisation-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    .specialisation-item {
+      flex-basis: calc((100% - 2 * 15px) / 2);
+    }
+  }
+}

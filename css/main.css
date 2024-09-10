@@ -72,6 +72,7 @@ body {
   color: #fff;
   font-weight: 500;
   margin: 50px auto;
+  box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
 }
 
 .subscription-button {
@@ -175,18 +176,34 @@ body {
   margin: 85px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .specialisation-title {
+    margin: auto;
+    font-size: 35px;
+  }
+  .specialisation-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .specialisation-list .specialisation-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 .apps {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .apps__title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 146%;
   text-align: center;
   color: #323232;
-  margin-bottom: 30px;
 }
 
 .apps__info {
@@ -200,7 +217,6 @@ body {
 .apps__item {
   display: flex;
   width: 350px;
-  justify-content: space-between;
 }
 
 .apps__wrapper {
@@ -214,12 +230,19 @@ body {
 
 .apps__list {
   display: flex;
-  flex-direction: column;
-  row-gap: 15px;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 35px;
+  row-gap: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .apps__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .standarts {
   padding-top: 100px;
   padding-bottom: 70px;
@@ -283,6 +306,18 @@ body {
   color: #999;
 }
 
+@media screen and (min-width: 768px) {
+  .project-info-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(15%);
+  }
+  .project-info-list .project-info-item {
+    flex-basis: calc((100% - 40px) / 2);
+    margin-bottom: 30px;
+  }
+}
 .projects {
   padding-top: 100px;
   padding-bottom: 85px;
@@ -346,10 +381,10 @@ body {
 }
 
 .video {
-  background-image: url(../../images/about-work.jpg);
-  background-repeat: no-repeat;
-  padding-top: 70px;
   height: 735px;
+  padding-top: 70px;
+  background-image: url("/images/about-work.jpg");
+  background-repeat: no-repeat;
 }
 
 .video-title {
@@ -372,10 +407,15 @@ body {
   margin: 0 auto;
   height: 474px;
   width: 400px;
-  background-image: url(../../images/watch-video.jpg);
+  background-image: url("/images/watch-video@1x.png");
   background-position: center;
   background-repeat: no-repeat;
   padding: 188px 100px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .video-button-wrap {
+    background-image: url("/images/whatch-video@2x.png");
+  }
 }
 
 .video-button {
@@ -405,9 +445,10 @@ body {
   margin-bottom: 15px;
 }
 .footer .footer-list .footer-item .footer-item-title {
+  margin-bottom: 15px;
+  text-align: center;
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 15px;
 }
 .footer .footer-list .footer-item .footer-link {
   font-style: normal;
@@ -452,27 +493,13 @@ body {
 }
 
 header {
-  background-image: url("../../images/hero-bg.jpg");
-}
-header .nav {
-  padding: 39px 0;
-  border-bottom: solid #a1a1a1 1px;
-}
-header .nav .nav__list {
-  display: flex;
-  justify-content: space-between;
-}
-header .nav .nav__list .nav__list-link {
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
+  background-image: url("/images/hero@1x.jpg");
 }
 header .hero {
   padding-top: 150px;
   padding-bottom: 200px;
 }
 header .hero .hero__title {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: center;
   color: #fff;
@@ -485,4 +512,39 @@ header .hero .hero__info {
   text-align: center;
   color: #fff;
   margin-bottom: 50px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  header {
+    background-image: url("/images/hero@2x.jpg");
+  }
+}
+
+.nav {
+  padding: 39px 0;
+  border-bottom: solid #a1a1a1 1px;
+}
+.nav .nav__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+}
+.nav .nav__list .nav__list-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+  .nav .nav__list {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav .nav__list {
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=main.css.map */

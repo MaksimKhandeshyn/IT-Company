@@ -3,12 +3,12 @@
   padding-bottom: 80px;
 }
 .apps__title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 146%;
   text-align: center;
   color: $dark;
-  margin-bottom: 30px;
 }
 .apps__info {
   font-weight: 400;
@@ -20,7 +20,7 @@
 .apps__item {
   display: flex;
   width: 350px;
-  justify-content: space-between;
+
 }
 
 .apps__wrapper {
@@ -34,8 +34,17 @@
 
 .apps__list {
   display: flex;
-  flex-direction: column;
-  row-gap: 15px;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 35px;
+  row-gap: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .apps__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }

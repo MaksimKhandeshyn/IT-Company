@@ -1,0 +1,31 @@
+.nav {
+  padding: 39px 0;
+  border-bottom: solid $header-line 1px;
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    .nav__list-link {
+      color: $white;
+      font-weight: 500;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav {
+    .nav__list {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    .nav__list {
+      justify-content: space-around;
+    }
+  }
+}
