@@ -14,6 +14,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  color: $dark;
 }
 
 .content-text {
@@ -67,10 +68,29 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    // transform: translateX(15%); оно вызвало баг который я кинул в дс
     .project-info-item {
       flex-basis: calc((100% - 2 * 20px) / 2);
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-wrap {
+    width: 490px;
+    border: none;
+  }
+  .standarts-photo {
+    display: block;
+  }
+  .project-info-list {
+    flex-wrap: nowrap;
+    margin: auto;
+    .project-info-item {
+      width: 104px;
+      margin-right: 100px;
+      margin-top: 70px;
+      flex-basis: auto;
     }
   }
 }

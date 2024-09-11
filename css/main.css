@@ -48,6 +48,19 @@ body {
   background-color: #4985ff;
   margin: auto;
 }
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    margin-top: 50px;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .hero__btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 #4985ff;
+  }
+}
 
 .apps-btn {
   display: block;
@@ -111,10 +124,30 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .standarts-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .standarts-container::after {
+    content: "";
+    display: block;
+    width: 1110px;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-top: 90px;
+  }
+  .title-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .specialisation {
   padding-top: 100px;
   padding-bottom: 85px;
@@ -198,6 +231,29 @@ body {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .specialisation-title {
+    width: 540px;
+    margin-bottom: 80px;
+    text-align: start;
+  }
+  .specialisation-list {
+    flex-wrap: nowrap;
+  }
+  .specialisation-list .specialisation-item {
+    flex-basis: auto;
+  }
+  .specialisation-list .specialisation-item .ourprojects-photo {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .specialisation-list .specialisation-item .specialisation-type {
+    text-align: start;
+  }
+  .specialisation-list .specialisation-item .specialisation-type-desc {
+    width: 350px;
+  }
+}
 .apps {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -234,6 +290,13 @@ body {
   margin-bottom: 12px;
 }
 
+.apps-item__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.58;
+  color: #999;
+}
+
 .apps__list {
   display: flex;
   align-items: center;
@@ -247,6 +310,36 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .apps {
+    padding-top: 110px;
+    padding-bottom: 105px;
+  }
+  .apps__title {
+    width: 740px;
+    margin: auto;
+    font-size: 36px;
+  }
+  .apps__info {
+    width: 730px;
+    margin-top: 30px;
+    text-align: center;
+    margin: 30px auto 70px auto;
+  }
+  .apps__list {
+    margin-bottom: 55px;
+  }
+  .apps__item {
+    align-items: flex-start;
+    margin-right: 30px;
+  }
+  .apps-item__title {
+    font-size: 18px;
+  }
+  .apps-item__info {
+    width: 220px;
   }
 }
 .standarts {
@@ -265,6 +358,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  color: #323232;
 }
 
 .content-text {
@@ -322,6 +416,25 @@ body {
   .project-info-list .project-info-item {
     flex-basis: calc((100% - 40px) / 2);
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-wrap {
+    width: 490px;
+    border: none;
+  }
+  .standarts-photo {
+    display: block;
+  }
+  .project-info-list {
+    flex-wrap: nowrap;
+    margin: auto;
+  }
+  .project-info-list .project-info-item {
+    width: 104px;
+    margin-right: 100px;
+    margin-top: 70px;
+    flex-basis: auto;
   }
 }
 .projects {
@@ -595,6 +708,17 @@ header .hero .hero__info {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  header {
+    padding-bottom: 190px;
+    background-repeat: no-repeat;
+  }
+  header .hero .hero__info {
+    width: 830px;
+    margin: auto;
+    font-size: 48px;
+  }
+}
 .nav {
   padding: 39px 0;
   border-bottom: solid #a1a1a1 1px;
@@ -622,5 +746,31 @@ header .hero .hero__info {
 @media screen and (min-width: 768px) {
   .nav .nav__list {
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav .nav__list {
+    margin-right: 400px;
+    justify-content: end;
+  }
+  .nav .nav__list .nav__list-item {
+    position: relative;
+    margin-right: 40px;
+  }
+  .nav .nav__list .nav__list-item::after {
+    content: "";
+  }
+  .nav .nav__list .nav__list-item:hover::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    display: block;
+    width: 100%;
+    height: 0;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 }/*# sourceMappingURL=main.css.map */

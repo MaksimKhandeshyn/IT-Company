@@ -81,3 +81,25 @@
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .specialisation-title {
+    width: 540px;
+    margin-bottom: 80px;
+    text-align: start;
+  }
+  .specialisation-list {
+    flex-wrap: nowrap;
+    .specialisation-item {
+      flex-basis: auto;
+      .ourprojects-photo {
+        width: fit-content;
+      }
+      .specialisation-type {
+        text-align: start;
+      }
+      .specialisation-type-desc {
+        width: 350px;
+      }
+    }
+  }
+}

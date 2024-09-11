@@ -26,3 +26,16 @@ header {
     background-image: url("../images/hero@2x.jpg");
   }
 }
+@media screen and (min-width: 1200px) {
+  header {
+    padding-bottom: 190px;
+    background-repeat: no-repeat;
+    .hero {
+      .hero__info {
+        width: 830px;
+        margin: auto;
+        font-size: 48px;
+      }
+    }
+  }
+}
