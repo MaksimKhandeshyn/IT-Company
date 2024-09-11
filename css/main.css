@@ -76,7 +76,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .specialisation-button {
-    margin: 50px auto 0 auto;
+    margin: 50px auto;
     max-width: 1200px;
   }
 }
@@ -495,8 +495,6 @@ body {
   background-color: #f6f6f8;
 }
 .footer .footer-list {
-  display: flex;
-  text-align: center;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -505,10 +503,9 @@ body {
   margin-bottom: 15px;
 }
 .footer .footer-list .footer-item .footer-item-title {
-  margin-bottom: 15px;
-  text-align: center;
   font-weight: 600;
   font-size: 18px;
+  margin-bottom: 15px;
 }
 .footer .footer-list .footer-item .footer-link {
   font-style: normal;
@@ -533,6 +530,15 @@ body {
   color: #999;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .footer-list {
+    display: flex;
+    text-align: center;
+  }
+  .footer .footer-list .footer-item {
+    margin-bottom: 15px;
+  }
+}
 .subscription-form {
   display: flex;
   justify-content: center;
