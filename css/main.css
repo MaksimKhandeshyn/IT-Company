@@ -74,6 +74,12 @@ body {
   margin: 50px auto;
   box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
 }
+@media screen and (min-width: 768px) {
+  .specialisation-button {
+    margin: 50px auto 0 auto;
+    max-width: 1200px;
+  }
+}
 
 .subscription-button {
   width: 190px;
@@ -132,7 +138,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   color: #fff;
-  width: 480px;
+  width: 100%;
   text-align: center;
   line-height: 1.1;
 }
@@ -286,6 +292,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  text-align: center;
 }
 
 .project-info-icon {
@@ -311,7 +318,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    transform: translateX(15%);
   }
   .project-info-list .project-info-item {
     flex-basis: calc((100% - 40px) / 2);
@@ -343,17 +349,32 @@ body {
   margin-bottom: 65px;
 }
 
+.projects-list {
+  align-items: baseline;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+}
+
 .projects-img {
   margin: 0 auto;
 }
 
-.projects-item + .projects-item {
-  margin-top: 30px;
+@media screen and (max-width: 767px) {
+  .projects-item + .projects-item {
+    margin-top: 30px;
+  }
 }
 
 .subscription {
   padding-top: 85px;
   padding-bottom: 85px;
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    padding-top: 0;
+  }
 }
 
 .subscription-title {
@@ -361,6 +382,11 @@ body {
   font-size: 18px;
   text-align: center;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .subscription-title {
+    font-size: 20px;
+  }
 }
 
 .subscription-text {
@@ -371,6 +397,11 @@ body {
   color: #999;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .subscription-text {
+    font-size: 18px;
+  }
+}
 
 .subscription-info {
   font-weight: 400;
@@ -378,6 +409,11 @@ body {
   line-height: 158%;
   text-align: center;
   color: #999;
+}
+@media screen and (min-width: 768px) {
+  .subscription-info {
+    font-size: 15px;
+  }
 }
 
 .video {
@@ -417,6 +453,13 @@ body {
     background-image: url("/images/whatch-video@2x.png");
   }
 }
+@media screen and (min-width: 768px) {
+  .video-button-wrap {
+    width: 600px;
+    max-width: 1200px;
+    text-align: -webkit-center;
+  }
+}
 
 .video-button {
   display: block;
@@ -425,10 +468,25 @@ body {
   border-radius: 200px;
   border: 1px solid #fff;
   background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .video-button {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .button-info {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .button-info {
+    display: contents;
+    color: #fff;
+  }
 }
 
 .footer {
@@ -437,6 +495,8 @@ body {
   background-color: #f6f6f8;
 }
 .footer .footer-list {
+  display: flex;
+  text-align: center;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -490,6 +550,11 @@ body {
   border: 1px solid #f2f2f2;
   box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .subscription-form .subscription-input {
+    width: 319px;
+  }
 }
 
 header {

@@ -3,6 +3,8 @@
   padding-bottom: 30px;
   background-color: $section-bg;
   .footer-list {
+    display: flex;
+    text-align: center;
     width: fit-content;
     margin: auto;
     .footer-item {

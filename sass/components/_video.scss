@@ -32,6 +32,12 @@
     (min-resolution: 2dppx) {
     background-image: url("/images/whatch-video@2x.png");
   }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    max-width: 1200px;
+    text-align: -webkit-center;
+  }
 }
 .video-button {
   display: block;
@@ -40,7 +46,20 @@
   border-radius: 200px;
   border: 1px solid $white;
   background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 .button-info {
   display: none;
+
+  @media screen and (min-width: 768px) {
+   display: contents;
+   color: $white;
+  }
 }
