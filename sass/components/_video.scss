@@ -21,7 +21,7 @@
 .video-button-wrap {
   margin: 0 auto;
   height: 474px;
-  width: 400px;
+  width: 100%;
   background-image: url("/images/watch-video@1x.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 .video-button {
   display: block;
   height: 100px;
-  width: 200px;
+  width: 100%;
   border-radius: 200px;
   border: 1px solid $white;
   background-color: transparent;
