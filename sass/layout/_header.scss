@@ -1,5 +1,5 @@
 header {
-  background-image: url("/images/hero@1x.jpg");
+  background-image: url("../images/hero@1x.jpg");
   .hero {
     padding-top: 150px;
     padding-bottom: 200px;
@@ -23,6 +23,6 @@ header {
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("/images/hero@2x.jpg");
+    background-image: url("../images/hero@2x.jpg");
   }
 }
