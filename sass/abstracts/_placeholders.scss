@@ -1,0 +1,17 @@
+%button-default {
+  display: block;
+  width: 200px;
+  height: 45px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  margin: auto;
+  background-color: #4985ff;
+  border-radius: 30px;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

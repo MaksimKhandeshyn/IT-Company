@@ -6,7 +6,7 @@
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 146%;
+  line-height: 1.46;
   text-align: center;
   color: $dark;
 }
@@ -20,6 +20,12 @@
 .apps__item {
   display: flex;
   width: 350px;
+
+  .apps__icon {
+    outline: solid $light-grey 1px;
+    padding: 10px;
+    border-radius: 100%;
+  }
 }
 .apps__wrapper {
   margin-top: 55px;
@@ -36,8 +42,7 @@
   color: $grey;
 }
 .apps__list {
-  display: flex;
-  align-items: center;
+  @extend %flex-center;
   flex-direction: column;
   margin-bottom: 35px;
   row-gap: 15px;

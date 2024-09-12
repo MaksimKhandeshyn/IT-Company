@@ -1,16 +1,14 @@
 .specialisation {
   padding-top: 100px;
-  padding-bottom: 85px;
   background: linear-gradient(to bottom, #504dc2 50%, #ffffff 50%);
 
   &::after {
     content: "";
     display: block;
-    // border: 1px solid $light-grey;
     background-color: $light-grey;
     width: 100%;
     height: 1px;
-    margin: 50px auto;
+    margin: 85px auto;
   }
 
   .section-title {
