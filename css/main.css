@@ -685,6 +685,9 @@ button:not(.video-button):hover {
   .footer-list {
     display: flex;
   }
+  .footer-list .footer-item {
+    margin-right: 10px;
+  }
 }
 .subscription-form {
   display: flex;

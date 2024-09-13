@@ -73,5 +73,8 @@
 @media screen and (min-width: 768px) {
   .footer-list {
     display: flex;
+    .footer-item {
+      margin-right: 10px;
+    }
   }
 }
