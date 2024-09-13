@@ -6,21 +6,20 @@
 
 .projects-title {
   text-align: center;
-  font-family: $font-family;
-  font-weight: 700;
   font-size: 30px;
   line-height: 1.1;
-  margin-bottom: 30px;
 }
 
 .projects-text {
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: 16px;
+  margin-bottom: 65px;
   line-height: 1.1;
   text-align: center;
   color: $grey;
-  margin-bottom: 65px;
+
+  @media screen and (min-width: 1200px) {
+    width: 730px;
+    margin: 30px auto;
+  }
 }
 
 .projects-list {

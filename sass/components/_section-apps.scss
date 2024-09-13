@@ -20,12 +20,7 @@
 .apps__item {
   display: flex;
   width: 350px;
-
-  .apps__icon {
-    outline: solid $light-grey 1px;
-    padding: 10px;
-    border-radius: 100%;
-  }
+  //Я перенес отсюда айтлайн потому что на мобилке и на планешете он смотрелся не кругом а овалом.
 }
 .apps__wrapper {
   margin-top: 55px;
@@ -36,7 +31,6 @@
   margin-bottom: 12px;
 }
 .apps-item__info {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.58;
   color: $grey;
@@ -78,6 +72,11 @@
   .apps__item {
     align-items: flex-start;
     margin-right: 30px;
+    .apps__icon {
+      outline: solid $light-grey 1px;
+      padding: 10px;
+      border-radius: 100%;
+    }
   }
   .apps-item__title {
     font-size: 18px;

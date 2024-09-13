@@ -173,7 +173,6 @@ button:not(.video-button):hover {
 }
 
 .specialisation-type {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
   margin: 30px 0;
@@ -184,8 +183,6 @@ button:not(.video-button):hover {
 }
 
 .specialisation-type-desc {
-  font-weight: 400;
-  font-size: 16px;
   color: #999;
   margin-bottom: 47px;
 }
@@ -271,11 +268,6 @@ button:not(.video-button):hover {
   display: flex;
   width: 350px;
 }
-.apps__item .apps__icon {
-  outline: solid #e0e0e0 1px;
-  padding: 10px;
-  border-radius: 100%;
-}
 
 .apps__wrapper {
   margin-top: 55px;
@@ -287,7 +279,6 @@ button:not(.video-button):hover {
 }
 
 .apps-item__info {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.58;
   color: #999;
@@ -329,6 +320,11 @@ button:not(.video-button):hover {
     align-items: flex-start;
     margin-right: 30px;
   }
+  .apps__item .apps__icon {
+    outline: solid #e0e0e0 1px;
+    padding: 10px;
+    border-radius: 100%;
+  }
   .apps-item__title {
     font-size: 18px;
   }
@@ -349,26 +345,22 @@ button:not(.video-button):hover {
 
 .content-title {
   margin-bottom: 35px;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   color: #323232;
 }
 
 .content-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   color: #999;
 }
 
 .content-link {
+  display: block;
   margin-top: 42px;
   font-weight: 500;
-  font-size: 16px;
   text-decoration: underline;
   color: #4985ff;
-  display: block;
 }
 
 .standarts-photo {
@@ -437,21 +429,21 @@ button:not(.video-button):hover {
 
 .projects-title {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 30px;
   line-height: 1.1;
-  margin-bottom: 30px;
 }
 
 .projects-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  margin-bottom: 65px;
   line-height: 1.1;
   text-align: center;
   color: #999;
-  margin-bottom: 65px;
+}
+@media screen and (min-width: 1200px) {
+  .projects-text {
+    width: 730px;
+    margin: 30px auto;
+  }
 }
 
 .projects-list {
@@ -509,7 +501,6 @@ button:not(.video-button):hover {
 }
 
 .subscription-info {
-  font-weight: 400;
   font-size: 13px;
   line-height: 1.58;
   text-align: center;
@@ -533,7 +524,6 @@ button:not(.video-button):hover {
 }
 
 .video-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 1.1;
   text-align: center;
@@ -618,7 +608,7 @@ button:not(.video-button):hover {
 }
 @media screen and (min-width: 768px) {
   .button-info {
-    display: contents;
+    display: block;
     color: #fff;
   }
 }

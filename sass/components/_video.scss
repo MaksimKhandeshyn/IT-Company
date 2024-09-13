@@ -10,7 +10,6 @@
   }
 }
 .video-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 1.1;
   text-align: center;
@@ -87,7 +86,7 @@
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: contents;
+    display: block;//contents?
     color: $white;
   }
 }
